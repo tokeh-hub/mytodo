@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    background: linear-gradient(to right, #00ecfa,#00b8ea);
+    width: 100%;
+    height: 100%;
+}
+.todo-app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.todos{
+    background-color: white;
+    height: auto;
+    width: 90%;
+    /* border-radius: 5px; */
+    /* padding: 5px; */
+    margin-top: 30px;
+}
+.update{
+    background-color: white;
+    width: 90%;
+    padding: 10px;
+    display: none;
+}
+.show{
+    display: block
+}
+article{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;   
+    border-bottom: 1px solid black;
+}
+article p{
+     padding-top: 20px;
+     font-weight: 400;
+     text-transform: capitalize;
+}
+
+input{
+     width: 70%;
+     height: 20px;
+     border: 1px solid transparent;
+     border-radius: 5px;
+     margin-left: 50px;
+     outline: none;
+     margin-top: 20px;
+}
+.btns{
+    /* margin-bottom: 35px; */
+}
+.btns .btn{
+    outline: none;
+    background: transparent;
+    border: transparent;
+    color: red;
+    font-size: 15px;
+    margin-top: 8px;
+}
+.btns .btn-2{
+    outline: none;
+    background: transparent;
+    border: transparent;
+    color: rgb(30, 30, 236);
+    font-size: 15px;
+    margin-right: 5px;
+    margin-top: 8px;
+}
+
+@media  screen and (min-width:800px) {
+    .todos{
+        background-color: white;
+        height: auto;
+        width: 60%;
+        margin-top: 30px;
+    }
+    .update{
+        background-color: white;
+        width: 60%;
+        padding: 10px;
+    }
+}
